@@ -38,10 +38,6 @@ public class CustomWebApplicationServer {
                     BufferedReader br = new BufferedReader(new InputStreamReader(in, StandardCharsets.UTF_8));  // 라인-바이-라인으로 읽어 들이기 위함
                     DataOutputStream dos = new DataOutputStream(out);
 
-                    String line;
-                    while ((line = br.readLine()) != "") {
-                        System.out.println(line);
-                    }
                 }
 
             }
