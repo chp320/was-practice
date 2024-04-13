@@ -38,8 +38,14 @@ public class CustomWebApplicationServer {
                     BufferedReader br = new BufferedReader(new InputStreamReader(in, StandardCharsets.UTF_8));  // 라인-바이-라인으로 읽어 들이기 위함
                     DataOutputStream dos = new DataOutputStream(out);
 
-                }
+                    HttpRequest httpRequest = new HttpRequest(br);
 
+                    // GET /calculate?operand1=11&operator=*&operand2=55
+                    if (httpRequest.isGetRequest() && httpRequest.matchPath("/calculate")) {
+                        // GET 메서드이고 /calculate 로 들어오는 경우에만 쿼리스트링을 가져올꺼임
+                        QueryStrings queryStrings = httpRequest.getQueryStrings();
+                    }
+                }
             }
         }
     }
