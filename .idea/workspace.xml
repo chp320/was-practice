@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e980aea3-d047-4f89-bf6a-1bba29a89cde" name="Changes" comment="step1~step3 관련 내용 주석 추가">
+    <list default="true" id="e980aea3-d047-4f89-bf6a-1bba29a89cde" name="Changes" comment="CGI/Servlet 내용 정리">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/counter/Counter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/counter/RaceConditionDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -70,7 +72,7 @@
       <recent name="org.example.calculate" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.test | #1">
+  <component name="RunManager" selected="Application.RaceConditionDemo">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="was-practice.main" />
@@ -84,27 +86,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RaceConditionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.counter.RaceConditionDemo" />
+      <module name="was-practice.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.counter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in get-requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http">
       <method v="2" />
     </configuration>
     <configuration name="test | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
-    </configuration>
-    <configuration name="QueryStringsTest.createTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="was-practice.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.QueryStringsTest" />
-      <option name="METHOD_NAME" value="createTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="checkThreadTest.threadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="was-practice.test" />
@@ -124,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RaceConditionDemo" />
         <item itemvalue="HTTP Request.test | #1" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.checkThreadTest.threadTest" />
         <item itemvalue="HTTP Request.All in get-requests" />
-        <item itemvalue="JUnit.QueryStringsTest.createTest" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +141,7 @@
       <updated>1713005031096</updated>
       <workItem from="1713005032842" duration="4328000" />
       <workItem from="1713014471671" duration="1234000" />
-      <workItem from="1713016988557" duration="10266000" />
+      <workItem from="1713016988557" duration="11060000" />
     </task>
     <task id="LOCAL-00001" summary="was 기능을 하는 기능 구현 (HTTP 의 request line 출력)">
       <created>1713011334921</created>
@@ -200,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713102345335</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="CGI/Servlet 내용 정리">
+      <created>1713103725992</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713103725992</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +232,8 @@
     <MESSAGE value="thread pool 을 사용한 요청 처리 기능 구현" />
     <MESSAGE value="step1~step3" />
     <MESSAGE value="step1~step3 관련 내용 주석 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="step1~step3 관련 내용 주석 추가" />
+    <MESSAGE value="CGI/Servlet 내용 정리" />
+    <option name="LAST_COMMIT_MESSAGE" value="CGI/Servlet 내용 정리" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
