@@ -86,6 +86,7 @@ Content-Length: 3
 ### Servlet (Server + Applet 의 합성어)
 - 자바에서 웹 애플리케이션을 만드는 기술
 - 자바에서 동적인 웹 페이지를 구현하기 위힌 표준
+![img.png](img.png)
 
 ### Servlet Container
 - 서블릿의 생성부터 소멸까지의 라이프 사이클을 관리하는 역할
@@ -101,3 +102,23 @@ Content-Length: 3
 - WAS 는 매 요청마다 thread pool에서 기존 thread 를 사용
 - WAS 의 주요 튜닝 포인트는 max thread 수
 - 대표적인 WAS 는 톰캣이 있음
+
+<hr>
+
+## Servlet 상속 구조
+![img_1.png](img_1.png)
+
+### Servlet 인터페이스
+- 서블릿 컨테이너가 서블릿 인터페이스에 있는 메소드들을 호출
+- 서블릿 생명주기와 관련된 메서드 ★
+  - init() : 서블릿 컨테이너가 서블릿 생성 후 '초기화' 작업 수행을 위해 호출
+  - service() : 클라이언트 요청이 들어올 때마다 서블릿 컨테이너가 호출
+  - destroy() : 서블릿 컨테이너가 종료될 때 호출
+- 서블릿 기타 메서드
+  - getServletConfig() : 서블릿 초기 설정 정보를 담고 있는 객체 반환 => 서블릿 이름, 초기 변수값 등 get
+  - getServletInfo() : 서블릿 저작자/버전/저작권 등과 같은 서블릿에 대한 정보 get
+
+#### Spring MVC Flow
+![img_2.png](img_2.png)
+- Spring의 핵심 "Dispatcher Servlet"
+
