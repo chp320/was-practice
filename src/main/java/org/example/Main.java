@@ -9,9 +9,9 @@ public class Main {
 
         /*
          * step1 ~ step3 까지 단계별로 코드를 수정하였는데,
-         *  step1: main thread 에서 처리하는 방식
-         *  step2: thread 방식으로 처리
-         *  step3: thread pool 방식으로 처리
+         *  step1: main thread 에서 처리하는 방식   => CustomWebApplicationServer
+         *  step2: thread 방식으로 처리            => CustomWebApplicationServerStep2
+         *  step3: thread pool 방식으로 처리       => CustomWebApplicationServerStep3
          * 각 방식 확인은 주석 해제해서 확인
          */
 
