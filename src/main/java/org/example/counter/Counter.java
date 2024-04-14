@@ -19,9 +19,11 @@ public class Counter implements Runnable {
 
     @Override
     public void run() {
-        this.increment();
-        System.out.println("Value for Thread after increment " + Thread.currentThread().getName() + " " + this.getValue()); // 1
-        this.decrement();
-        System.out.println("Value for Thread after decrement " + Thread.currentThread().getName() + " " + this.getValue()); // 0
+        synchronized (this) {
+            this.increment();
+            System.out.println("Value for Thread after increment " + Thread.currentThread().getName() + " " + this.getValue()); // 1
+            this.decrement();
+            System.out.println("Value for Thread after decrement " + Thread.currentThread().getName() + " " + this.getValue()); // 0
+        }
     }
 }

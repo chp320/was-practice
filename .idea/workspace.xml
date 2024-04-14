@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e980aea3-d047-4f89-bf6a-1bba29a89cde" name="Changes" comment="CGI/Servlet 내용 정리">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/counter/Counter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/counter/RaceConditionDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="e980aea3-d047-4f89-bf6a-1bba29a89cde" name="Changes" comment="race condition 발생 코드 작성">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/counter/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/counter/Counter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +138,7 @@
       <updated>1713005031096</updated>
       <workItem from="1713005032842" duration="4328000" />
       <workItem from="1713014471671" duration="1234000" />
-      <workItem from="1713016988557" duration="11060000" />
+      <workItem from="1713016988557" duration="11163000" />
     </task>
     <task id="LOCAL-00001" summary="was 기능을 하는 기능 구현 (HTTP 의 request line 출력)">
       <created>1713011334921</created>
@@ -206,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713103725992</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="race condition 발생 코드 작성">
+      <created>1713104563103</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713104563103</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +237,8 @@
     <MESSAGE value="step1~step3" />
     <MESSAGE value="step1~step3 관련 내용 주석 추가" />
     <MESSAGE value="CGI/Servlet 내용 정리" />
-    <option name="LAST_COMMIT_MESSAGE" value="CGI/Servlet 내용 정리" />
+    <MESSAGE value="race condition 발생 코드 작성" />
+    <option name="LAST_COMMIT_MESSAGE" value="race condition 발생 코드 작성" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
