@@ -61,3 +61,41 @@ Content-Length: 3
 - StatusLine (HTTP/1.1 200 OK)
 - Header
 - Body
+
+<hr>
+
+## CGI 와 서블릿
+### CGI (Common Gateway Interface)
+- 웹 서버와 어플리케이션 사이에 데이터를 주고 받는 규약
+- CGI 규칙에 따라 만들어진 프로그램을 CGI 프로그램이라고 함
+- CGI 프로그램 종류로는 ``컴파일 방식``(C, C++, Java 등)과 ``인터프리터 방식``(Perl, PHP, Python 등)이 있음
+
+#### 인터프리터 방식 CGI
+```
+웹 서버 <-> Script 엔진 <-> Script 파일
+```
+- 웹 서버는 Script 엔진을 실행, Script 엔진은 Script 파일을 해석
+- 웹 서버와 Script 엔진 사이에 ``CGI 규칙``을 통해서 통신
+#### 서블릿과 서블릿 컨테이너
+```
+웹 서버 <-> Servlet Container <-> Servlet 파일
+```
+- 웹 서버와 Servlet Container 사이는 ``CGI 규칙``에 따라 통신(데이터 주고 받음)
+- Container?? '라이프 사이클'을 관리한다고 하면 ``container``라는 표현을 씀 → Servlet Container: Servlet의 라이프 사이클을 관리
+
+### Servlet (Server + Applet 의 합성어)
+- 자바에서 웹 애플리케이션을 만드는 기술
+- 자바에서 동적인 웹 페이지를 구현하기 위힌 표준
+
+### Servlet Container
+- 서블릿의 생성부터 소멸까지의 라이프 사이클을 관리하는 역할
+- 서클릿 컨테이너는 웹 서버와 소켓을 만들고 통신하는 과정을 대신 처리함. 개발자는 비즈니스 로직에만 집중! (앞서 미니 톰캣 구현한 과정을 대신 처리함)
+- 서블릿 객체를 싱글톤으로 관리 (인스턴스 하나만 생성해서 공유하는 방식)
+  - 상태를 유지(stateful)하게 설계하면 안됨 → Counter 코드 참고
+  - thread safety 하지 않음
+
+### WAS vs 서블릿 컨테이너
+- WAS 는 서블릿 컨테이너를 포함하는 개념 (거의 동일)
+- WAS 는 매 요청마다 thread pool에서 기존 thread 를 사용
+- WAS 의 주요 튜닝 포인트는 max thread 수
+- 대표적인 WAS 는 톰캣이 있음
