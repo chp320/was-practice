@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e980aea3-d047-4f89-bf6a-1bba29a89cde" name="Changes" comment="http request/response 기능 구현">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ClientRequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CustomWebApplicationServerStep2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/MyThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/checkThreadTest.java" afterDir="false" />
+    <list default="true" id="e980aea3-d047-4f89-bf6a-1bba29a89cde" name="Changes" comment="1. thread 확인을 위한 테스트 코드 작성&#10;2. step2 - 사용자 요청 시마다 thread 생성 기능 구현">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CustomWebApplicationServerStep3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CustomWebApplicationServerStep2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CustomWebApplicationServerStep2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RequestLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RequestLine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +144,7 @@
       <updated>1713005031096</updated>
       <workItem from="1713005032842" duration="4328000" />
       <workItem from="1713014471671" duration="1234000" />
-      <workItem from="1713016988557" duration="7644000" />
+      <workItem from="1713016988557" duration="8668000" />
     </task>
     <task id="LOCAL-00001" summary="was 기능을 하는 기능 구현 (HTTP 의 request line 출력)">
       <created>1713011334921</created>
@@ -177,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713058153094</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1. thread 확인을 위한 테스트 코드 작성&#10;2. step2 - 사용자 요청 시마다 thread 생성 기능 구현">
+      <created>1713101174333</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713101174333</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +203,8 @@
     <MESSAGE value="HTTP 요청으로 올라오는 쿼리스트링을 파싱하여 key, value로 저장하는 기능 구현" />
     <MESSAGE value="쿼리스트링 기능 구현 중" />
     <MESSAGE value="http request/response 기능 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="http request/response 기능 구현" />
+    <MESSAGE value="1. thread 확인을 위한 테스트 코드 작성&#10;2. step2 - 사용자 요청 시마다 thread 생성 기능 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. thread 확인을 위한 테스트 코드 작성&#10;2. step2 - 사용자 요청 시마다 thread 생성 기능 구현" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

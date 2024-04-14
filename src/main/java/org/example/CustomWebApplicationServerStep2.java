@@ -32,8 +32,10 @@ public class CustomWebApplicationServerStep2 {
                 // 클라이언트가 연결되었음
                 logger.info("[CustomWebApplicationServerStep2] client connected!");
 
+                // ============ step2: 사용자 요청이 들어올 때마다 Thread를 새로 생성해서 사용자 요청을 처리하도록 한다. ============
                 // 클라이언트가 연결될 때마다 thread 를 생성함 => 그런데 요청이 있을 때마다 thread 를 생성한다면, 성능 이슈가 있을텐데.. (cpu/mem 사용률 증가, ..)
                 // ==> 요청 시 마다 thread 를 생성하는 것이 아니라, 미리 생성해둔 thread 를 사용하는 thread pool 방식으로 개선!!
+                // ==============================================================================================
                 new Thread(new ClientRequestHandler(clientSocket)).start();
             }
         }
