@@ -19,11 +19,11 @@ public class RequestLine {
     public RequestLine(String requestLine) {
         String[] tokens = requestLine.split(" ");
         this.method = tokens[0];
-        System.out.println(this.method);    // GET
-        System.out.println(tokens[1]);      // /calculate?operand1=11&operator=*&operand2=55
+//        System.out.println(this.method);    // GET
+//        System.out.println(tokens[1]);      // /calculate?operand1=11&operator=*&operand2=55
         String[] urlPathTokens = tokens[1].split("\\?");
         this.urlPath = urlPathTokens[0];
-        System.out.println(urlPath);        // /calculate
+//        System.out.println(urlPath);        // /calculate
 
         // 앞서 ? 를 기준으로 쪼개면
         // /calculate ? operand1=11&operator=*&operand2=55
