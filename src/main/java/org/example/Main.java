@@ -7,8 +7,16 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-//        new CustomWebApplicationServer(8080).start();
-//        new CustomWebApplicationServerStep2(8080).start();
-        new CustomWebApplicationServerStep3(8080).start();
+        /*
+         * step1 ~ step3 까지 단계별로 코드를 수정하였는데,
+         *  step1: main thread 에서 처리하는 방식
+         *  step2: thread 방식으로 처리
+         *  step3: thread pool 방식으로 처리
+         * 각 방식 확인은 주석 해제해서 확인
+         */
+
+//        new CustomWebApplicationServer(8080).start();     // step1
+//        new CustomWebApplicationServerStep2(8080).start();        // step2
+        new CustomWebApplicationServerStep3(8080).start();      // step3
     }
 }
