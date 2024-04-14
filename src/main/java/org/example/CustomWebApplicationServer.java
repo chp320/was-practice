@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.calculate.Calculator;
+import org.example.calculate.PositiveNumber;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -42,8 +44,19 @@ public class CustomWebApplicationServer {
 
                     // GET /calculate?operand1=11&operator=*&operand2=55
                     if (httpRequest.isGetRequest() && httpRequest.matchPath("/calculate")) {
-                        // GET 메서드이고 /calculate 로 들어오는 경우에만 쿼리스트링을 가져올꺼임
+                        // GET 메서드이고 path가 /calculate 로 들어오는 경우에만 쿼리스트링을 가져올꺼임
                         QueryStrings queryStrings = httpRequest.getQueryStrings();
+
+                        int operand1 = Integer.parseInt(queryStrings.getValue("operand1"));
+                        String operator = queryStrings.getValue("operator");
+                        int operand2 = Integer.parseInt(queryStrings.getValue("operand2"));
+
+                        int result = Calculator.calculate(new PositiveNumber(operand1), operator, new PositiveNumber(operand2));
+                        byte[] body = String.valueOf(result).getBytes();
+
+                        HttpResponse httpResponse = new HttpResponse(dos);
+                        httpResponse.response200Header("application/json", body.length);
+                        httpResponse.responseBody(body);
                     }
                 }
             }

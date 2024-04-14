@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e980aea3-d047-4f89-bf6a-1bba29a89cde" name="Changes" comment="HTTP 요청으로 올라오는 쿼리스트링을 파싱하여 key, value로 저장하는 기능 구현">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/HttpRequest.java" afterDir="false" />
+    <list default="true" id="e980aea3-d047-4f89-bf6a-1bba29a89cde" name="Changes" comment="쿼리스트링 기능 구현 중">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/HttpResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/calculate/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CustomWebApplicationServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CustomWebApplicationServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HttpRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HttpRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/QueryString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/QueryString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/QueryStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/QueryStrings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RequestLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RequestLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.http" beforeDir="false" afterPath="$PROJECT_DIR$/test.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +70,11 @@
       <recent name="$PROJECT_DIR$/src/main/java/org/example/calculator/tobe" />
       <recent name="$PROJECT_DIR$/src/main/java/org/example/calculator/domain" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.calculate" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.QueryStringsTest.createTest">
+  <component name="RunManager" selected="HTTP Request.test | #1">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="was-practice.main" />
@@ -131,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.test | #1" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.QueryStringsTest.createTest" />
         <item itemvalue="JUnit.QueryStringTest.createTest" />
         <item itemvalue="JUnit.RequestLineTest.create" />
-        <item itemvalue="HTTP Request.test | #1" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +159,7 @@
       <updated>1713005031096</updated>
       <workItem from="1713005032842" duration="4328000" />
       <workItem from="1713014471671" duration="1234000" />
-      <workItem from="1713016988557" duration="902000" />
+      <workItem from="1713016988557" duration="4276000" />
     </task>
     <task id="LOCAL-00001" summary="was 기능을 하는 기능 구현 (HTTP 의 request line 출력)">
       <created>1713011334921</created>
@@ -165,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713017297850</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="쿼리스트링 기능 구현 중">
+      <created>1713017914106</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713017914106</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +202,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="was 기능을 하는 기능 구현 (HTTP 의 request line 출력)" />
     <MESSAGE value="HTTP 요청으로 올라오는 쿼리스트링을 파싱하여 key, value로 저장하는 기능 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="HTTP 요청으로 올라오는 쿼리스트링을 파싱하여 key, value로 저장하는 기능 구현" />
+    <MESSAGE value="쿼리스트링 기능 구현 중" />
+    <option name="LAST_COMMIT_MESSAGE" value="쿼리스트링 기능 구현 중" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -26,4 +26,12 @@ public class QueryStrings {
                     queryStrings.add(new QueryString(values[0], values[1]));    // key, value 로 구분된 쌍을 List에 담는다.
                 });
     }
+
+    public String getValue(String key) {
+        return this.queryStrings.stream()
+                .filter(queryString -> queryString.exists(key))
+                .map(QueryString::getValue)
+                .findFirst()
+                .orElse(null);
+    }
 }

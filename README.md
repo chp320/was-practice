@@ -43,3 +43,21 @@
 
 ### HTTP 헤더
 - Content-type, Accept, Cookie, Set-Cookie, Authorization 등
+
+## HttpRequest 구조
+- RequestLine (GET /calculate?operand1=11&operator=*&operand2=55 HTTP/1.1)
+  - HttpMethod
+  - path
+  - queryString
+- Header
+- Body
+
+## HttpResponse 구조
+``` sample
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=utf-8
+Content-Length: 3
+```
+- StatusLine (HTTP/1.1 200 OK)
+- Header
+- Body
